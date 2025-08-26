@@ -5,8 +5,10 @@ html {
 }
 
 body {
-	font-family:Georgia, 'Times New Roman', Times, serif;
+	font-family: 'et-book', Georgia, serif;
 	margin-left: 20%;
+	font-variant-ligatures: common-ligatures;
+    font-variant-numeric: oldstyle-nums;
 	background-color: rgba(95, 121, 149, 1);
 }
 
