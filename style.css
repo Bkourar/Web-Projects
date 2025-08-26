@@ -1,0 +1,43 @@
+
+html {
+	height: 100;
+	font-size: 16px;
+}
+
+body {
+	font-family:Georgia, 'Times New Roman', Times, serif;
+	margin-left: 20%;
+	background-color: rgba(95, 121, 149, 1);
+}
+
+header {
+	color: white;
+	font-style:normal;
+	line-height: 1.75;
+}
+
+h1, h2 {
+	line-height: 0.5;
+	text-transform: lowercase;
+}
+
+h1 {
+	line-height: 0.1;
+	font-weight:500;
+	font-size: clamp(3rem, 14vw, 12rem);
+}
+
+h1::first-letter {
+	text-transform: uppercase;
+	font-variant: small-caps;
+}
+
+h2 {
+	font-weight:100;
+	font-size: clamp(2rem, 12vw, 10rem);
+}
+
+h3 {
+	font-weight:170;
+	font-size: 70px;
+}
