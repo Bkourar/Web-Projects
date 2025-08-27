@@ -1,3 +1,39 @@
+/* Define the font face for ET Book */
+@font-face {
+    font-family: 'ET Book';
+    src: url('fonts/et-book-roman-line-figures.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ET Book';
+    src: url('fonts/et-book-roman-old-style-figures.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ET Book';
+    src: url('fonts/et-book-display-italic-old-style-figures.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'ET Book';
+    src: url('fonts/et-book-semi-bold-old-style-figures.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ET Book';
+    src: url('fonts/et-book-bold-line-figures.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
 html, body {
 	margin: 0;
 	padding: 0;
@@ -17,12 +53,13 @@ body {
 	font-family: Futura, 'Gill Sans', 'Helvetica Neue', Arial, sans-serif;
 	text-transform: uppercase;
     letter-spacing: 0.2em;
-	line-height: 2.95;
+	line-height: 2.50;
 }
 
 a {
 	padding: 0 15%;
-	font-size: 1.75em;
+	font-size: 1.65em;
+	font-weight: 1;
 }
 
 .content {
@@ -33,9 +70,10 @@ a {
 
 h1 {
 	letter-spacing: 0.025em;
-	min-height: 1.68em;
+	min-height: 1.70em;
     border-bottom: 0.25em solid rgba(95, 121, 149, 0.5);
 	/*for border --- ^ */
+	font-family: 'ET Book';
 	font-weight: normal;
     line-height: 0.2em;
 	font-size: calc( 2em + (11.25 - 2.25) * ( (100vw - 20em) / ( 100 - 20) ));
@@ -54,15 +92,58 @@ p {
     unicode-bidi: isolate;
 }
 
-.first {
+h3 {
+	font-family: 'ET Book', Georgia, serif;
 	font-variant: small-caps;
-	line-height: 1.75em;
+	line-height: 0.2em;
+	letter-spacing: 0.15em;
+	font-size: 40px;
+	font-weight: 100;
 }
 
-p.first:first-of-type cite {
-	white-space: pre;
+p.first {
+	font-size: 1.5em;
+	font-family: 'ET Book';
 }
 
- cite {
+cite {
 	font-style: italic;
 }
+
+p.second {
+	font-size: 1.3em;
+}
+
+/* blockquote {
+	font-style: italic;
+    margin: 2em;
+    padding: 0;
+}
+
+blockquote {
+	display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+    unicode-bidi: isolate;
+}
+
+blockquote p:first-child::before {
+	content: '“';
+    top: -0.125em;
+    left: -0.5em;
+}
+
+blockquote p:first-child::before , blockquote p:last-child::after{
+	color: rgba(255, 255, 255, 0.30);
+}
+
+blockquote p:first-child::before, blockquote p:last-child::after {
+    font-style: normal;
+    font-size: 4em;
+    line-height: 1;
+    /* color: rgba(0, 0, 0, 0.25); */
+    /* position: absolute; */
+/* } */ 
+
