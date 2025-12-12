@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CatPhotosApp</title>
+        <meta charset="UFT-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h2>CatPhotosApp</h2>
+        <main class="main_part">
+            <h3>Cat Photos</h3>
+            <p>Clike here to view more <a href="#" target="_blank">cat photos</a>.</p>
+            
+            <a href="#"><img src="https://www.zooplus.ie/magazine/wp-content/uploads/2020/10/cats-eyes-1.webp" alt="A cute orange cat lying on its back." style="width: 250px;"></a>
+            <h3>Cat Lists</h3>
+            <div class="lists-labels">
+                <p>things cat <em>loves:</em></p>
+                <ul>
+                    <li>cat nip</li>
+                    <li>laser pointers</li>
+                    <li>lasagna</li>
+                </ul>
+                <p>things cat <strong>hats:</strong></p>
+                <ol>
+                    <li>flea treatment</li>
+                    <li>thunder</li>
+                    <li>others cats</li>
+                </ol>
+            </div>
+            <form id="cat-back" action="/subimt-cat-photos">
+                <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor" checked>indoor</label>
+                <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor">outdoor</label><br>
+                
+                <label for="loving"><input id="loving" type="checkbox" name="personality" checked>Loving</label>
+                <label for="lazy"><input id="lazy" type="checkbox" name="personality">Lazy</label>
+                <label for="energitc"><input id="energitc" type="checkbox" name="personality">Energitc</label>
+
+                <input type="text" placeholder="cat photo URL" required><br>
+                <button type="submit">Submit</button>
+            </form>
+        </main><br>
+        <footer><small>No Copyright</small> - <a href="https://youtube.com">Youtube</a></footer>
+        <hr>
+        <section class="table_sec">
+            <table>
+                <caption>My shchedule</caption>
+                <thead>
+                    <tr>
+                        <th>&nbsp;</th>
+                        <th>Time</th>
+                        <th>Activity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Moring</th>
+                        <td><time datetime="08:00">8am</time>-<time datetime="11:00">11am</time></td>
+                        <td>write code</td>
+                    </tr>
+                    <tr>
+                        <th>break</th>
+                        <td><time datetime="11:00">11am</time>-<time datetime="12:00">12pm</time></td>
+                        <td>Eat lanch</td>
+                    </tr>
+                    <tr>
+                        <th>Afternon</th>
+                        <td><time datetime="12:00">12pm</time>-<time datetime="17:00">5pm</time></td>
+                        <td>never give up</td>
+                    </tr>
+                    <tr>
+                        <th>Evening</th>
+                        <td><time datetime="17:00">5pm</time>-<time datetime="21:00">9pm</time></td>
+                        <td>السعي منا و نصر من الله</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">Night</th>
+                        <td rowspan="2">all other time</td>
+                        <td>النوم دواء</td>
+                    </tr>
+                    <tr>
+                        <td>free time</td>
+                    </tr>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">
+                               إِنَّمَا ‌الْعِلْمُ ‌بِالتَّعَلُّمِ، وَالْحِلْمُ بِالتَّحَلُّمِ، وَمَنْ يَتَحَرَّ الْخَيْرَ يُعْطَهُ، وَمَنْ يَتَّقِ الشَّرَّ يُوَقَّهُ
+                            </td>
+                        </tr>
+                    </tfoot>
+                </tbody>
+            </table>
+        </section>
+        <hr>
+        <article class="contact_ar">
+            <fieldset>
+                <legend>Info conatcat</legend>
+                <form action="https://httpbin.org/post" method="post">
+                    <p>
+                        <label for="Firstname">Firstname:</label>
+                        <input type="text" id="Firstname" name="Firstname" placeholder="name" autocomplete="on" required>
+                    </p>
+                    <p>
+                        <label for="Lastname">Lastname:</label>
+                        <input type="text" id="Lastname" name="Lastname" placeholder="nick" autocomplete="on" required>
+                    </p>
+                    <p>
+                        <label for="Password">Password:</label>
+                        <input type="text" id="Password" name="Password" placeholder="pass" required>
+                    </p>
+                    <p>
+                        <label for="Phone">Phone:</label>
+                        <input type="text" id="Phone" name="Phone" placeholder="555-555-555-555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required>
+                    </p>
+                    <p>
+                        <label for="deced">Favorty deced:</label>
+                        <input type="number" id="deced" name="deced" min="1990" max="2030" step="5" value="1990" required>
+                    </p>
+                    <p>
+                        <label for="deced">Favorty:</label>
+                        <select name="Favorty" id="Favorty">
+                            <optgroup label="sport">
+                                <option value="sport">الخيل</option>
+                                <option value="army">السيف</option>
+                            </optgroup>
+                            <optgroup label="science">
+                                <option value="science">التوحيد</option>
+                                <option value="computer">Macbook</option>
+                            </optgroup>
+                            <optgroup label="work">
+                                <option value="informatique">Hacking</option>
+                                <option value="informatique">lowlevel</option>
+                            </optgroup>
+                        </select>
+                        <!-- <label for="deced">Favorty:</label>
+                        <input type="text" id="chose" name="chose" list="Favorty-list">
+                        <datalist id="Favorty-list">
+                            <option value="sport">
+                            <option value="army">
+                            <option value="science">
+                            <option value="computer">
+                            <option value="informatique">
+                            <option value="informatique">
+                        </datalist> -->
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Post Message</legend>
+                    <label for="for Message">Your commit</label><br>
+                    <textarea name="Message" id="Message" cols="30" rows="10" placeholder="commit"></textarea>
+                </fieldset>
+                <div class="div_sec">
+                    <button type="submit">submit</button>
+                    <button type="reset">reset</button>
+                </div>
+            </form>
+        </article>
+        </body>
+</html>

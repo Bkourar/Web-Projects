@@ -1,0 +1,130 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+US+Trad+Guides&display=swap');
+
+* {
+    font-family: verdana, arial;
+    
+    font-style: italic;
+}
+
+body {
+    font-size: 16px;
+}
+
+body::selection {
+    color: rgb(89,255,71);
+    background-color: hsl(0,0%,21%);
+}
+
+header {
+    text-align: center;
+    padding-left: 100px;
+}
+
+
+nav {
+    text-align: center;
+    border: 2px solid gold;
+    height: auto;
+    width: 25%;
+
+}
+
+.first-article {
+    text-align: center;
+}
+
+.first-article pre {
+    border: 2px dotted;
+    height: 600px;
+    width: 500px;
+    overflow-y: scroll;
+    margin: auto;
+}
+
+.first-section h2 {
+    margin-bottom: 9px;
+} 
+
+li, a {
+    display: block;
+    float: left;
+    padding-left: .5em;
+}
+
+audio {
+    padding-left: 500px;
+    margin-top: -70px;
+}
+
+#button {
+    margin-top: -10px;
+}
+
+table {
+    position: relative;
+    left: 30%;
+    border: 5px solid rgba(213, 149, 149, 0.99);
+    border-style: inset;
+    background-color: black;
+}
+
+th, button {
+    width: 100px;
+    border-radius: 5px;
+    border-style: inset;
+    background-color: lightblue;
+}
+
+td {
+    width: 100px;
+    background-color: aliceblue;
+}
+
+.second-article {
+    margin-top: -95px;
+    margin-left: 150px;
+}
+
+.second-article hr {
+    margin-left: -157px;
+}
+
+.second-article h2, #button {
+    position: relative;
+    left: 15%;
+    text-shadow: 3px 3px 5px rgb(136, 130, 130);
+    
+}
+
+#button:hover {
+    border-style: ridge;
+    background-color: rgb(123, 253, 253, 0.5);
+    width: 105px;
+}
+
+#button:active {
+    border-style: dashed;
+    box-shadow: 3px 5px 7px rgb(245, 88, 88, 05);
+}
+
+fieldset {
+    margin-top: 20px;
+    width: 700px;
+}
+
+label, input, select{
+    font-family: "Playwrite US Trad Guides";
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+textarea {
+    margin-left: 3px;
+    margin-top: 10px;
+}
+
+[for="commant"] {
+    position: relative;
+    bottom: 20px;
+}

@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(254, 240, 183);
+}
+
+.boxes {
+    display: grid;
+    grid-template-columns: 100px auto 100px;
+    grid-template-rows: 50px 50px;
+    gap: 5px;
+}
+
+.box1, .box3 , .box5 {
+    background-color: lightblue;
+}
+
+.box2, .box6 {
+    background-color:red;
+}
+
+.box4 {
+    background-color: rgb(248, 215, 84);
+}

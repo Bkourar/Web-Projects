@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(254, 240, 183);
+
+}
+
+.boxes {
+    height: 100%;
+    color: rgb(254, 240, 183);
+    display: grid;
+    gap:5px;
+    font-size: 40px;
+    text-align: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px auto 40px;
+}
+
+.header, .content {
+    background-color: lightblue;
+}
+
+.header {
+    grid-column: 1 / -1;
+}
+
+.menu {
+    background-color: red;
+    /* grid-row: 1; */
+}
+
+.content {
+    grid-column: 2 / -1;
+}
+
+.footer {
+    background-color: rgb(236, 199, 48);
+    grid-column: 1 / -1 ;
+}
+

@@ -1,0 +1,10 @@
+  .penguin * {
+    position: absolute;
+  }
+
+  .penguin {
+    top: 10%;
+    left: 25%;
+    background: var();
+    /* width: ; */
+  }
